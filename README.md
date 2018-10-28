@@ -1,2 +1,2 @@
-# flex-slideshow
+# Flex Slideshow
 Flex Photo Slideshow
