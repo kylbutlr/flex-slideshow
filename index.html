@@ -124,12 +124,6 @@
             this.classList.toggle('open');
         }
 
-        function toggleActive(e) {
-            if (e.target.classList.contains('open')) {    
-                this.classList.toggle('active');
-            }
-        }
-
         function checkIdle() {
             idleCntr += 1;
             if (idleCntr >= idleTime) {
@@ -144,7 +138,6 @@
             idleCntr = 0;
         }
         panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-        panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
     </script>
 </body>
 </html>
