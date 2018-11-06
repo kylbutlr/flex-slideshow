@@ -1,75 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">    
     <meta charset="UTF-8">
     <title>Flex Slideshow</title>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <script src="scripts/main.js"></script>
 </head>
 <body>
-    <style>
-        html {
-            background: #000;
-            box-sizing: border-box;
-            cursor: default;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        .panel1 { background-image:url("media/images/1.jpg"); }
-        .panel2 { background-image:url("media/images/2.jpg"); }
-        .panel3 { background-image:url("media/images/3.jpg"); }
-        .panel4 { background-image:url("media/images/5.jpg"); }
-        .panel5 { background-image:url("media/images/6.jpg"); }
-        .panel6 { background-image:url("media/images/8.jpg"); }
-        .panel7 { background-image:url("media/images/9.jpg"); }
-        .panel8 { background-image:url("media/images/10.jpg"); }
-        .panel9 { background-image:url("media/images/15.jpg"); }
-        .panel10 { background-image:url("media/images/16.jpg"); }
-        .panel11 { background-image:url("media/images/18.jpg"); }
-        .panel12 { background-image:url("media/images/19.jpg"); }            
-        .panel13 { background-image:url("media/images/20.jpg"); }
-        
-        .text {
-            align-items: center;
-            background-color: #000000aa;
-            color: #fff;
-            display: flex;
-            font-family: 'Great Vibes', cursive;
-            font-size: 8vw;
-            height: 60px;
-            justify-content: center;
-            letter-spacing: 10px;
-            position: fixed;
-            text-shadow: 7px 7px 4px black;
-            top: 80vh;
-            width: 100vw;
-            z-index: 5;
-        }
-
-        .panel {
-            align-items: center;
-            background-position: center;
-            background-size: cover;
-            border-left: 2px solid;
-            border-right: 2px solid;
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-            transition: flex 2.5s;
-        }
-        .panels {
-            display: flex;
-            min-height: 100vh;
-            overflow: hidden;
-        }
-        .panel.open {
-            flex: 60vw;
-        }
-    </style>
-    
     <div class="panels">
-        <div class="panel panel1" id="p1"></div>
+        <div class="panel panel1" id="p1"></div>    
         <div class="panel panel2" id="p2"></div>
         <div class="panel panel3" id="p3"></div>
         <div class="panel panel4" id="p4"></div>
@@ -86,57 +26,5 @@
     <div class="text">
         Chef Dane's Kitchen
     </div>
-
-    <script>
-        var ssA = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-        const idleTime = 10;
-        var idleCntr = 0;
-        var ss = true;
-        var interval;
-        const panels = document.querySelectorAll('.panel');
-        
-        function onLoad() {
-            interval = setInterval(slideshow, 4000);
-        }
-
-        function slideshow() {
-            if (ss == true) {
-                if (ssA.length > 0){
-                    let i = Math.floor(Math.random() * Math.floor(ssA.length));
-                    let z = ssA[i];
-                    ssA.splice(i, 1);
-                    document.getElementById('p'+z).click();
-                    setTimeout( function() {
-                        document.getElementById('p'+z).click()
-                    }, 2500);
-                }
-                else {
-                    ssA = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-                    slideshow();
-                }
-            };
-        }
-
-        function toggleOpen() {
-            for (i=0;i<panels.length;i++){
-                if (panels[i].classList.contains('open') && panels[i] != this){
-                    panels[i].classList.toggle('open');
-                }
-            };
-            this.classList.toggle('open');
-        }
-
-        function checkIdle() {
-            idleCntr += 1;
-            if (idleCntr >= idleTime) {
-                ss = true;
-            }
-        }
-
-        onLoad();
-        window.setInterval(checkIdle, 1000);
-        document.onmousemove = function() { ss = false; idleCntr = 0; }
-        panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    </script>
 </body>
 </html>
