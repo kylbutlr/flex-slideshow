@@ -19,7 +19,6 @@ html {
 .panel11 { background-image:url("images/18.jpg"); }
 .panel12 { background-image:url("images/19.jpg"); }            
 .panel13 { background-image:url("images/20.jpg"); }
-
 .text {
     align-items: center;
     background-color: #000000aa;
@@ -36,7 +35,6 @@ html {
     width: 100vw;
     z-index: 5;
 }
-
 .panel {
     align-items: center;
     background-position: center;
@@ -48,6 +46,9 @@ html {
     flex-direction: column;
     justify-content: center;
     transition: flex 2.5s;
+}
+.panel:hover {
+    box-shadow: inset 0px 0px 10px 2px white;
 }
 .panels {
     display: flex;

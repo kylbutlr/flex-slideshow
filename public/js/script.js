@@ -3,7 +3,7 @@ const idleTime = 10;
 var idleCntr = 0;
 var ss = true;
 var interval;
-const panels = document.querySelectorAll('.panel');
+const $panels = document.querySelectorAll('.panel');
 
 function onLoad() {
     interval = setInterval(slideshow, 4000);
@@ -11,7 +11,7 @@ function onLoad() {
 
 function slideshow() {
     if (ss == true) {
-        if (ssA.length > 0){
+        if (ssA.length > 0) {
             let i = Math.floor(Math.random() * Math.floor(ssA.length));
             let z = ssA[i];
             ssA.splice(i, 1);
@@ -28,9 +28,9 @@ function slideshow() {
 }
 
 function toggleOpen() {
-    for (i=0;i<panels.length;i++){
-        if (panels[i].classList.contains('open') && panels[i] != this){
-            panels[i].classList.toggle('open');
+    for (i=0;i<$panels.length;i++) {
+        if ($panels[i].classList.contains('open') && $panels[i] != this) {
+            $panels[i].classList.toggle('open');
         }
     };
     this.classList.toggle('open');
@@ -41,9 +41,19 @@ function checkIdle() {
     if (idleCntr >= idleTime) {
         ss = true;
     }
+    if (ss === true) {
+        for (i=0;i<$panels.length;i++) {
+            $panels[i].classList.add("hover-scale");
+        }
+    }
+    else if (ss === false) {
+        for (i=0;i<$panels.length;i++) {
+            $panels[i].classList.remove("hover-scale");
+        }
+    }
 }
 
 onLoad();
 window.setInterval(checkIdle, 1000);
 document.onmousemove = function() { ss = false; idleCntr = 0; }
-panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+$panels.forEach(panel => panel.addEventListener('click', toggleOpen));
