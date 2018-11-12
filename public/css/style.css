@@ -8,12 +8,14 @@ html {
 }
 h1 {
     color: #ececec;
+    cursor: pointer;
     font-family: 'Great Vibes', cursive;
     font-size: 8vw;
     font-weight: normal;
     letter-spacing: 5px;
     margin: 0;
     text-shadow: 7px 7px 4px black;
+    z-index: 2;
 }
 .panel1 { background-image:url("images/1.jpg"); }
 .panel2 { background-image:url("images/2.jpg"); }
@@ -38,6 +40,12 @@ h1 {
     bottom: 20vh;
     width: 100vw;
     z-index: 1;
+}
+h1:hover {
+    transform: scale(1.05);
+}
+h1:active {
+    transform: scale(1);
 }
 .panel {
     align-items: center;
