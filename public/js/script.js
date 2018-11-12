@@ -30,10 +30,16 @@ function slideshow() {
 function toggleOpen() {
     for (i=0;i<$panels.length;i++) {
         if ($panels[i].classList.contains('open') && $panels[i] != this) {
-            $panels[i].classList.toggle('open')
+            $panels[i].classList.remove('open')
+            $($panels[i]).stop().animate({
+                opacity: 0.5
+            }, 1000)
         }
     }
-    this.classList.toggle('open')
+    this.classList.add('open')
+    $(this).stop().animate({
+        opacity: 1
+    }, 1000)
 }
 
 function checkIdle() {
@@ -60,5 +66,12 @@ $(function() {
             $("body").fadeIn(1000)
             $(".header").hide().delay(1000).fadeIn(1000)
         }, 2000)
+    })
+    $(".panel").hover(function(e) {
+        if (!this.classList.contains("open")) {
+            $(this).stop().animate({
+                opacity: e.type=="mouseenter" ? 1 : 0.5
+            }, 250)
+        }
     })
 })

@@ -55,6 +55,7 @@ h1:hover {
     flex-direction: column;
     justify-content: center;
     transition: flex 2.5s;
+    opacity: 0.5;
 }
 .panels {
     display: flex;
