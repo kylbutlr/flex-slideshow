@@ -55,7 +55,10 @@ $(function() {
     $("body").hide().fadeIn(1000)
     $(".header").hide().delay(1000).fadeIn(1000)
     $("h1").click(function(e) {
-        $("body").fadeOut(1000).delay(1000).fadeIn(1000)    
-        $(".header").fadeOut(1000).delay(2000).fadeIn(1000)
+        $("body").fadeOut(1000)
+        setTimeout(function() {
+            $("body").fadeIn(1000)
+            $(".header").hide().delay(1000).fadeIn(1000)
+        }, 2000)
     })
 })
