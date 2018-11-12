@@ -28,13 +28,6 @@ h1 {
 .panel11 { background-image:url("images/18.jpg"); }
 .panel12 { background-image:url("images/19.jpg"); }            
 .panel13 { background-image:url("images/20.jpg"); }
-.header-div {
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    height: 40vh;
-    width: 100vw;
-}
 .header {
     align-items: center;
     background-color: #222222aa;
@@ -58,13 +51,11 @@ h1 {
     justify-content: center;
     transition: flex 2.5s;
 }
-.panel:hover {
-    box-shadow: inset 0px 0px 10px 2px white;
-}
 .panels {
     display: flex;
     min-height: 100vh;
     overflow: hidden;
+    cursor: pointer;
 }
 .panel.open {
     flex: 60vw;

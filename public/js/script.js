@@ -59,5 +59,5 @@ document.onmousemove = function() { ss = false; idleCntr = 0; }
 $panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 
 $(function() {
-    $(".header-div").hide().delay(500).fadeIn(1000)
+    $(".header").hide().delay(500).fadeIn(1000)
 })
