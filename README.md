@@ -1,4 +1,4 @@
 # Flex Slideshow
-Photo/image slideshow using flex
+Photo/image slideshow using flex.
 
-Created as a landing page but could also be used in a window
+Created as a landing page but could also be used in a window.
