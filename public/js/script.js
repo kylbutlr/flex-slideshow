@@ -33,13 +33,21 @@ function toggleOpen() {
             $panels[i].classList.remove('open')
             $($panels[i]).stop().animate({
                 opacity: 0.5
-            }, 1000)
+            }, 2000)
         }
     }
-    this.classList.add('open')
-    $(this).stop().animate({
-        opacity: 1
-    }, 1000)
+    if (this.classList.contains('open')) {
+        this.classList.remove('open')
+        $(this).stop().animate({
+            opacity: 0.5
+        }, 2000)
+    }
+    else {
+        this.classList.add('open')
+        $(this).stop().animate({
+            opacity: 1
+        }, 1000)
+    }
 }
 
 function checkIdle() {
