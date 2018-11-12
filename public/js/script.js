@@ -70,7 +70,7 @@ $(function() {
     $(".panel").hover(function(e) {
         if (!this.classList.contains("open")) {
             $(this).stop().animate({
-                opacity: e.type=="mouseenter" ? 1 : 0.5
+                opacity: e.type=="mouseenter" ? 1 : 0.6
             }, 250)
         }
     })
