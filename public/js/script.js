@@ -1,5 +1,5 @@
 /* jshint asi: true */
-/*jshint esversion: 6 */
+/* jshint esversion: 6 */
 
 let ssA = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 const idleTime = 10
