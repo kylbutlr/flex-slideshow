@@ -57,3 +57,7 @@ onLoad();
 window.setInterval(checkIdle, 1000);
 document.onmousemove = function() { ss = false; idleCntr = 0; }
 $panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+
+$(function() {
+    $(".header-div").hide().delay(500).fadeIn(1000)
+})

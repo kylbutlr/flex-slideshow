@@ -6,6 +6,15 @@ html {
     padding: 0;
     overflow: hidden;
 }
+h1 {
+    color: #ececec;
+    font-family: 'Great Vibes', cursive;
+    font-size: 8vw;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin: 0;
+    text-shadow: 7px 7px 4px black;
+}
 .panel1 { background-image:url("images/1.jpg"); }
 .panel2 { background-image:url("images/2.jpg"); }
 .panel3 { background-image:url("images/3.jpg"); }
@@ -19,21 +28,23 @@ html {
 .panel11 { background-image:url("images/18.jpg"); }
 .panel12 { background-image:url("images/19.jpg"); }            
 .panel13 { background-image:url("images/20.jpg"); }
-.text {
-    align-items: center;
-    background-color: #000000aa;
-    color: #fff;
-    display: flex;
-    font-family: 'Great Vibes', cursive;
-    font-size: 8vw;
-    height: 60px;
-    justify-content: center;
-    letter-spacing: 10px;
-    position: fixed;
-    text-shadow: 7px 7px 4px black;
-    top: 80vh;
+.header-div {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    height: 40vh;
     width: 100vw;
-    z-index: 5;
+}
+.header {
+    align-items: center;
+    background-color: #222222aa;
+    display: flex;
+    height: 5vw;
+    justify-content: center;
+    position: absolute;
+    bottom: 20vh;
+    width: 100vw;
+    z-index: 1;
 }
 .panel {
     align-items: center;
