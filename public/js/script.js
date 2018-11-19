@@ -1,12 +1,12 @@
 /* jshint asi: true */
 /* jshint esversion: 6 */
 
+const $panels = document.querySelectorAll('.panel')
 let ssA = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 const idleTime = 10
 let idleCntr = 0
 let ss = true
 let interval
-const $panels = document.querySelectorAll('.panel')
 
 function onLoad() {
     interval = setInterval(slideshow, 4000)
@@ -69,8 +69,8 @@ document.onmousemove = function() {
 $panels.forEach(panel => panel.addEventListener('click', toggleOpen))
 
 $(function() {
-    $("body").hide().fadeIn(1000)
-    $(".header").hide().delay(1000).fadeIn(1000)
+    $("body").hide().delay(500).fadeIn(1000)
+    $(".header").hide().delay(1500).fadeIn(1000)
     $("h1").click(function(e) {
         $("body").fadeOut(1000)
         setTimeout(function() {
