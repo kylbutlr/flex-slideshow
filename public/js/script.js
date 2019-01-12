@@ -54,7 +54,7 @@ window.setInterval(checkIdle, 1000);
 document.onmousemove = function() { 
   ss = false;
   idleCntr = 0;
-}
+};
 $panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 
 $(function() {
@@ -66,7 +66,7 @@ $(function() {
       $("body").fadeIn(1000);
       $(".header").hide().delay(1000).fadeIn(1000);
     }, 2000);
-  })
+  });
   $(".panel").hover(function(e) {
     if (!this.classList.contains("open")) {
       $(this).stop().animate({
