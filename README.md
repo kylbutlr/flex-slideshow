@@ -1,9 +1,9 @@
 # Flex Slideshow
-### Javascript image slideshow using flexbox.
 
-This is an example of a "flex" slideshow, basically a window with around 4 - 16 pictures that are all shrunk horizontally. 
+This is an example of a "flex" slideshow, a Javascript image slideshow using CSS3's flexbox property.
 
-Upon loading, as long as the cursor does not move, the slideshow will begin by "flexing" open a randomly selected picture, pausing for a moment, and then closing back to normal before moving onto another random picture.
+
+Initially, just a window with around 4 - 16 pictures that are all shrunk horizontally. Upon loading, as long as the cursor does not move, the slideshow will begin by "flexing" open a randomly selected picture, pausing for a moment, and then closing back to normal before moving onto another random picture.
 
 If the cursor moves, the slideshow will pause and allow for any picture to be opened.
 
