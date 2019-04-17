@@ -20,15 +20,13 @@ h1 {
 .panel2 { background-image:url("images/2.jpg"); }
 .panel3 { background-image:url("images/3.jpg"); }
 .panel4 { background-image:url("images/5.jpg"); }
-.panel5 { background-image:url("images/6.jpg"); }
-.panel6 { background-image:url("images/8.jpg"); }
-.panel7 { background-image:url("images/9.jpg"); }
-.panel8 { background-image:url("images/10.jpg"); }
-.panel9 { background-image:url("images/15.jpg"); }
-.panel10 { background-image:url("images/16.jpg"); }
-.panel11 { background-image:url("images/18.jpg"); }
-.panel12 { background-image:url("images/19.jpg"); }            
-.panel13 { background-image:url("images/20.jpg"); }
+.panel5 { background-image:url("images/8.jpg"); }
+.panel6 { background-image:url("images/9.jpg"); }
+.panel7 { background-image:url("images/10.jpg"); }
+.panel8 { background-image:url("images/15.jpg"); }
+.panel9 { background-image:url("images/16.jpg"); }
+.panel10 { background-image:url("images/18.jpg"); }
+.panel11 { background-image:url("images/19.jpg"); }
 .header {
     align-items: center;
     background-color: #222222aa;

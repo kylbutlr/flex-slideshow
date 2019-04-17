@@ -1,5 +1,5 @@
 const $panels = document.querySelectorAll('.panel');
-let ssA = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+let ssA = [1,2,3,4,5,6,7,8,9,10,11];
 const idleTime = 10;
 let idleCntr = 0;
 let ss = true;
@@ -20,7 +20,7 @@ function slideshow() {
         document.getElementById('p'+z).click();
       }, 2500);
     } else {
-      ssA = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+      ssA = [1,2,3,4,5,6,7,8,9,10,11];
       slideshow();
     }
   }
