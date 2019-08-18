@@ -16,17 +16,17 @@ h1 {
     transform: scale(1);
     transition: transform 0.5s ease;
 }
-.panel1 { background-image:url("images/1.jpg"); }
-.panel2 { background-image:url("images/2.jpg"); }
-.panel3 { background-image:url("images/3.jpg"); }
-.panel4 { background-image:url("images/5.jpg"); }
-.panel5 { background-image:url("images/8.jpg"); }
-.panel6 { background-image:url("images/9.jpg"); }
-.panel7 { background-image:url("images/10.jpg"); }
-.panel8 { background-image:url("images/15.jpg"); }
-.panel9 { background-image:url("images/16.jpg"); }
-.panel10 { background-image:url("images/18.jpg"); }
-.panel11 { background-image:url("images/19.jpg"); }
+.panel1 { background-image:url("images/1.webp"); }
+.panel2 { background-image:url("images/2.webp"); }
+.panel3 { background-image:url("images/3.webp"); }
+.panel4 { background-image:url("images/5.webp"); }
+.panel5 { background-image:url("images/8.webp"); }
+.panel6 { background-image:url("images/9.webp"); }
+.panel7 { background-image:url("images/10.webp"); }
+.panel8 { background-image:url("images/15.webp"); }
+.panel9 { background-image:url("images/16.webp"); }
+.panel10 { background-image:url("images/18.webp"); }
+.panel11 { background-image:url("images/19.webp"); }
 .header {
     align-items: center;
     background-color: #222222aa;
